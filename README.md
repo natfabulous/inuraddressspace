@@ -7,7 +7,7 @@ Going through the [fasterthanlime inuraddressspace tutorial](https://www.youtube
 - [Summary](#summary)
 - [Order](#order)
 
-## Installation
+## Summary
 
 This is a monorepo which contains (mostly) rust projects
 
