@@ -1,0 +1,5 @@
+# use PowerShell instead of sh:
+set shell := ["powershell.exe", "-NoProfile"]
+
+just:
+  $proc = Start-Process -PassThru notepad ; Sleep 1 ; cargo run -- $proc.Id; Wait-Process $proc.Id ; $proc.ExitCode
