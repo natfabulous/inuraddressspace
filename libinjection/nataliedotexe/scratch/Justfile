@@ -1,0 +1,6 @@
+# just manual: https://github.com/casey/just
+
+easy:
+  #!powershell -NoProfile
+  yasm -g cv8 -f win64 easy.asm
+  link /debug /subsystem:console /nodefaultlib /entry:_main easy.obj
