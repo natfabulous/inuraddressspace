@@ -1,5 +1,5 @@
-# use PowerShell instead of sh:
+# use PowerShell instead of sh, do not load $PROFILE to save time:
 set shell := ["powershell.exe", "-NoProfile"]
 
 just:
-  $proc = Start-Process -PassThru notepad ; Sleep 1 ; cargo run -- $proc.Id; Wait-Process $proc.Id ; $proc.ExitCode
+  cargo build --manifest-path=..\natalib\Cargo.toml; $proc = Start-Process -PassThru notepad ; Sleep 1 ; cargo run -- $proc.Id; Wait-Process $proc.Id ; $proc.ExitCode

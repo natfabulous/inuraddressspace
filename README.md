@@ -18,3 +18,8 @@ The projects were created in the following order:
 - asm/nataliedotexe
 - asm/cli (debugging asm/nataliedotexe)
 - libinjection
+
+### libinjection
+
+`nataliedotexe` runs uses the dll built by `natalib` 
+the run command lives in the Justfile. `choco install just; just`, or just `just`  to run
